@@ -1,38 +1,98 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #393a3f;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#main-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#search-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#search-container p{
+  margin-right: 8px;
+  color: whitesmoke;
+}
+
+#input{
+  background-color: #27292e;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 0 3px 0 3px;
+  color: whitesmoke;
+}
+
+#input:focus{
+  border: 2px solid black;
+}
+
+.card-container{
+  height: 11.25rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #202125;
+  width: 25rem;
+  margin: 1.25rem;
+  border-radius: 7px;
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-container:hover{
+  transform: scale(1.05);
+}
+
+.img-container{
+  height: 11.25rem;
+  width: 11.25rem;
+}
+
+.img-card{
+  object-fit: contain;
+  height: 100%;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  width: 100%;
+}
+
+.name-card {
+  color: #07a1b3;
+  font-family: 'Creepster', cursive;
+}
+
+.info-container{
+  padding-top: 1.25rem;
+  flex-grow: 2;
+}
+
+.p-container{
+  padding-left: 0.9375rem;
+  text-align: start ;
+}
+
+.name-card{
+  font-size: 1.5625rem;
+  margin-bottom: 1.4375rem;
+}
+
+.info-container p{
+  color: #07a1b3;
+}
+
+span{
+  color: whitesmoke;
 }
